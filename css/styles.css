@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+
+/** globales **/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    font-size: 13px;
+}
+
+
+/** Utilidades **/
+
+.centrartexto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.firstmayus {
+    text-transform: capitalize;
+}
+
+
+/** Header **/
+
+.site-header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 32rem;
+}
+
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header span {
+    font-weight: 700;
+}
+
+
+/** navegacion **/
+
+.navegacion a {
+    display: block;
+    padding-top: 7px;
+    font-size: 15px;
+}
+
+.navegacion {
+    display: block;
+    text-align: center;
+}
+
+
+/** header texto **/
+
+.textoheader {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.textoheader p {
+    font-size: 1rem;
+}
