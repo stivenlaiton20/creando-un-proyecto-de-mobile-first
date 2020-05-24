@@ -71,6 +71,17 @@ a {
 
 /** Header **/
 
+
+/** barra **/
+
+@media (min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .site-header {
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
@@ -107,6 +118,16 @@ a {
     text-align: center;
 }
 
+@media (min-width: 760px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 6px;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}
+
 
 /** header texto **/
 
@@ -114,6 +135,12 @@ a {
     color: #ffffff;
     text-align: center;
     padding-top: 4rem;
+}
+
+@media (min-width: 760px) {
+    .textoheader {
+        margin-top: 9rem;
+    }
 }
 
 .textoheader p {
