@@ -246,3 +246,30 @@ a {
 .cursos-lista li:last-of-type {
     border-bottom: none;
 }
+
+
+/** footer */
+
+.site-footer {
+    background-color: #000000;
+    padding: 3rem;
+    margin-top: 2rem;
+    padding: 1rem
+}
+
+.site-footer p {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: 'PT sans' sans-serif;
+    text-align: center;
+}
+
+.site-footer p span {
+    font-weight: 700;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
