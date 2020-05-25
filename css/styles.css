@@ -19,6 +19,7 @@ body {
 
 .contenedor {
     max-width: 1200px;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -35,6 +36,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    line-height: 3rem;
 }
 
 h3 {
@@ -43,6 +45,7 @@ h3 {
 
 h4 {
     font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 
 img {
@@ -118,7 +121,7 @@ a {
     text-align: center;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .navegacion a {
         display: inline;
         margin-right: 6px;
@@ -137,7 +140,7 @@ a {
     padding-top: 4rem;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .textoheader {
         margin-top: 9rem;
     }
@@ -145,4 +148,101 @@ a {
 
 .textoheader p {
     font-size: 1rem;
+}
+
+
+/** botones **/
+
+.btm {
+    display: block;
+    text-align: center;
+    padding: 8px 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.btm-primario {
+    background-color: black;
+}
+
+.btm-segundario {
+    background-color: #784d3c;
+}
+
+@media (min-width: 768px) {
+    .btm {
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/** contenido principal **/
+
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog,
+.cursos {
+    flex: 0 0 100%;
+}
+
+.cursos {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .blog {
+        order: -1;
+        flex-basis: 66.6%;
+    }
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+    }
+}
+
+
+/** aside */
+
+.cursos h2 {
+    margin-bottom: 3px;
+}
+
+.cursos h4 {
+    margin-bottom: 1rem;
+}
+
+.cursos p {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cursos p span {
+    font-weight: 400;
+}
+
+.cursos-lista {
+    list-style: none;
+    padding: 0%;
+}
+
+.cursos-lista li {
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.cursos-lista li:last-of-type {
+    border-bottom: none;
 }
