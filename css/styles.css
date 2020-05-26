@@ -1,305 +1,351 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 2;
-}
-
-
-/** globales **/
-
-.contenedor {
-    max-width: 1200px;
-    width: 93%;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'PT Sans', sans-serif;
-}
-
-h1 {
-    font-size: 2.7rem;
-}
-
-h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    font-size: 13px;
-}
-
-
-/** Utilidades **/
-
-.centrartexto {
-    text-align: center;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-.firstmayus {
-    text-transform: capitalize;
-}
-
-@media (min-width: 768px) {
-    .grid {
-        display: flex;
-        justify-content: space-between;
-    }
-    .columna4 {
-        flex: 0 0 calc(33.3% - 1rem);
-    }
-    .columna6 {
-        flex: 0 0 calc(50% - 1rem);
-    }
-    .columna8 {
-        flex: 0 0 calc(66.6% - 1rem)
-    }
-}
-
-
-/** Header **/
-
-
-/** barra **/
-
-@media (min-width:768px) {
-    .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.site-header {
-    background-image: url(../img/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 32rem;
-}
-
-.site-header a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.site-header h1 {
-    text-align: center;
-    font-weight: 400;
-}
-
-.site-header span {
-    font-weight: 700;
-}
-
-
-/** navegacion **/
-
-.navegacion a {
-    display: block;
-    padding-top: 7px;
-    font-size: 15px;
-}
-
-.navegacion {
-    display: block;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .navegacion a {
-        display: inline;
-        margin-right: 6px;
-    }
-    .navegacion a:last-of-type {
-        margin-right: 0;
-    }
-}
-
-
-/** header texto **/
-
-.textoheader {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 4rem;
-}
-
-@media (min-width: 768px) {
-    .textoheader {
-        margin-top: 9rem;
-    }
-}
-
-.textoheader p {
-    font-size: 1rem;
-}
-
-
-/** botones **/
-
-.btm {
-    display: block;
-    text-align: center;
-    padding: 8px 3rem;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'PT sans', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 2rem;
-}
-
-.btm-primario {
-    background-color: black;
-}
-
-.btm-segundario {
-    background-color: #784d3c;
-}
-
-@media (min-width: 768px) {
-    .btm {
-        display: inline-block;
-        margin-bottom: 2rem;
-    }
-}
-
-
-/** contenido principal **/
-
-.contenido-principal {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.blog,
-.cursos {
-    flex: 0 0 100%;
-}
-
-.cursos {
-    order: -1;
-}
-
-@media (min-width: 768px) {
-    .contenido-principal {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .blog {
-        order: -1;
-        flex-basis: 66.6%;
-    }
-    .cursos {
-        flex-basis: calc(33.3% - 4rem);
-    }
-}
-
-
-/** aside */
-
-.cursos h2 {
-    margin-bottom: 3px;
-}
-
-.cursos h4 {
-    margin-bottom: 1rem;
-}
-
-.cursos p {
-    font-family: 'PT sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.cursos p span {
-    font-weight: 400;
-}
-
-.cursos-lista {
-    list-style: none;
-    padding: 0%;
-}
-
-.cursos-lista li {
-    border-bottom: 2px solid #e1e1e1;
-}
-
-.cursos-lista li:last-of-type {
-    border-bottom: none;
-}
-
-
-/** footer */
-
-.site-footer {
-    background-color: #000000;
-    padding: 3rem;
-    margin-top: 2rem;
-    padding: 1rem
-}
-
-.site-footer p {
-    color: #ffffff;
-    font-size: 2.4rem;
-    font-weight: 400;
-    font-family: 'PT sans' sans-serif;
-    text-align: center;
-}
-
-.site-footer p span {
-    font-weight: 700;
-}
-
-.site-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.curso span {
-    font-weight: 700;
-}
-
-.cursosin {
-    border-bottom: 2px solid #e1e1e1;
-    margin: 2rem;
-    padding-top: 2rem;
-}
-
-.cursosin:last-of-type {
-    border-bottom: none;
-}
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            line-height: 2;
+        }
+        /** globales **/
+        
+        .contenedor {
+            max-width: 1200px;
+            width: 93%;
+            margin: 0 auto;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        h1 {
+            font-size: 2.7rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        h4 {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        a {
+            font-size: 13px;
+        }
+        /** Utilidades **/
+        
+        .centrartexto {
+            text-align: center;
+        }
+        
+        .no-margin {
+            margin: 0;
+        }
+        
+        .firstmayus {
+            text-transform: capitalize;
+        }
+        
+        @media (min-width: 768px) {
+            .grid {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .centrarcolumnas {
+                justify-content: center;
+            }
+            .columna4 {
+                flex: 0 0 calc(33.3% - 1rem);
+            }
+            .columna6 {
+                flex: 0 0 calc(50% - 1rem);
+            }
+            .columna8 {
+                flex: 0 0 calc(66.6% - 1rem)
+            }
+            .columna10 {
+                flex: 0 0 calc(83.3% - 1rem);
+            }
+            .columna12 {
+                flex: 0 0 100%;
+            }
+        }
+        /** Header **/
+        /** barra **/
+        
+        @media (min-width:768px) {
+            .barra {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .site-header {
+            background-image: url(../img/banner.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 32rem;
+        }
+        
+        .site-header a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .site-header h1 {
+            text-align: center;
+            font-weight: 400;
+        }
+        
+        .site-header span {
+            font-weight: 700;
+        }
+        /** navegacion **/
+        
+        .navegacion a {
+            display: block;
+            padding-top: 7px;
+            font-size: 15px;
+        }
+        
+        .navegacion {
+            display: block;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .navegacion a {
+                display: inline;
+                margin-right: 6px;
+            }
+            .navegacion a:last-of-type {
+                margin-right: 0;
+            }
+        }
+        /** header texto **/
+        
+        .textoheader {
+            color: #ffffff;
+            text-align: center;
+            padding-top: 4rem;
+        }
+        
+        @media (min-width: 768px) {
+            .textoheader {
+                margin-top: 9rem;
+            }
+        }
+        
+        .textoheader p {
+            font-size: 1rem;
+        }
+        /** botones **/
+        
+        .btm {
+            display: block;
+            text-align: center;
+            padding: 8px 3rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'PT sans', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+            flex: 0 0 100%;
+            border: none;
+        }
+        
+        .btm-primario:hover {
+            cursor: pointer;
+        }
+        
+        .btm-primario {
+            background-color: black;
+        }
+        
+        .btm-segundario {
+            background-color: #784d3c;
+        }
+        
+        @media (min-width: 768px) {
+            .btm {
+                display: inline-block;
+                margin-bottom: 2rem;
+                flex: 0 0 auto;
+            }
+        }
+        /** contenido principal **/
+        
+        .contenido-principal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .blog,
+        .cursos {
+            flex: 0 0 100%;
+        }
+        
+        .cursos {
+            order: -1;
+        }
+        
+        @media (min-width: 768px) {
+            .contenido-principal {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .blog {
+                order: -1;
+                flex-basis: 66.6%;
+            }
+            .cursos {
+                flex-basis: calc(33.3% - 4rem);
+            }
+        }
+        /** aside */
+        
+        .cursos h2 {
+            margin-bottom: 3px;
+        }
+        
+        .cursos h4 {
+            margin-bottom: 1rem;
+        }
+        
+        .cursos p {
+            font-family: 'PT sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .cursos p span {
+            font-weight: 400;
+        }
+        
+        .cursos-lista {
+            list-style: none;
+            padding: 0%;
+        }
+        
+        .cursos-lista li {
+            border-bottom: 2px solid #e1e1e1;
+        }
+        
+        .cursos-lista li:last-of-type {
+            border-bottom: none;
+        }
+        /** footer */
+        
+        .site-footer {
+            background-color: #000000;
+            padding: 3rem;
+            margin-top: 2rem;
+            padding: 1rem
+        }
+        
+        .site-footer p {
+            color: #ffffff;
+            font-size: 2.4rem;
+            font-weight: 400;
+            font-family: 'PT sans' sans-serif;
+            text-align: center;
+        }
+        
+        .site-footer p span {
+            font-weight: 700;
+        }
+        
+        .site-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .curso span {
+            font-weight: 700;
+        }
+        
+        .cursosin {
+            border-bottom: 2px solid #e1e1e1;
+            margin: 2rem;
+            padding-top: 2rem;
+        }
+        
+        .cursosin:last-of-type {
+            border-bottom: none;
+        }
+        /** contacto **/
+        
+        .formulario-contacto {
+            background-color: #ffffff;
+            padding: 5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .formulario-contacto {
+                margin-top: -10rem;
+            }
+        }
+        
+        .formulario-contacto .campo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.3rem;
+        }
+        
+        .formulario-contacto .campo label {
+            flex: 0 0 6rem;
+        }
+        
+        .formulario-contacto .campo input:not([type="submit"]),
+        .formulario-contacto textarea {
+            flex: 1;
+            border: 1px solid #e1e1e1;
+        }
+        
+        .formulario-contacto textarea {
+            height: 10rem;
+        }
+        
+        .formulario-contacto .enviar {
+            display: flex;
+            justify-content: center;
+            border: none;
+        }
+        
+        .enviar {
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .formulario-contacto .enviar {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
